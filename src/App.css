@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1rem;
+  list-style: none;
+}
+img{
+width: 100%;
+height: 30%;
+}
+.firstsection{
+  width: 80%;
+  margin: 0 auto;
+}
+.firstsection h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.container_data{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,400px));
+  justify-content: space-around;
+}
+.container_search{
+  width: 100%;
+}
+.container_search input{
+width: 85%;
+}
+.container_search button{
+width: 15%;
+border: none;
+
+}
+.card{
+  background: gray;
+  margin: 10px;
+  height: 160px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.side_img{
+  width: 35%;
+  height: 100%;
+}
+.side_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.data_characters{
+  width:60%;
+  margin-left: 20px;
+}
+.data_characters ul,li{
+  padding: 0;
+}
+
+.imformation_characters{
+  width: 80%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+.imformation_characters h2 {
+  text-align: center;
+}
+.imformation_characters ul {
+  display: flex;
+  justify-content: space-around;
+}
+.number{
+  color: rgb(90, 165, 90);
+}
+.button{
+  background-color: greenyellow;
+  padding: 3px;
+}
+.button:hover{
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*XX_LARGE*/
+@media (max-width:1400px) {
+  .container_data{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,400px));
+    justify-content: space-between;
+  }
+}
+
+/*LARGE*/
+@media (max-width:992px) {
+  .container_data{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-around;
+  }
+}
+/*MEDIUM*/
+@media (max-width:768px) {
+
+  .imformation_characters{
+    width: 80%;
+    height: 115px;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: capitalize;
+   
+  }
+  .imformation_characters ul {
+ display: block;
+padding: 5px;
+  }
+  .imformation_characters li{
+    padding:.5px;
+  }
+  
+}
+/*SMALL*/
+@media (max-width:576px) {
+  .container_data{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,300px));
+    justify-content: space-around;
+  }
+  
+  .container_search input{
+    width: 75%;
+    }
+    .container_search button{
+    width: 25%;
+    }
+}
+
